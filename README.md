@@ -1,7 +1,8 @@
-This library allows you to animate css keyframes on scroll.
+Animate CSS keyframes by scrolling through the page.
 
 Work in progress. Todo:
 - tests
+- memory leaks
 - angular support under packages/ngx-keysroll
 - better docs
 - automatic CI deployment of github pages on merge to master
