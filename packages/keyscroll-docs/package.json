@@ -6,7 +6,7 @@
     "build": "rollup -c",
     "watch": "rollup -c -w",
     "dev": "npm-run-all --parallel start watch",
-    "serve": "live-server ./ --watch=./dist/bundle.js,./index.html",
+    "serve": "live-server ./dist --watch=./dist",
     "start": "concurrently \"npm run watch\" \"npm run serve\"",
     "publish:gh-pages": "gh-pages -d ./dist",
     "lint": "echo No linting for docs.",

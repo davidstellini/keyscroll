@@ -2,13 +2,30 @@
 <html>
   <title>Keyscroll Docs</title>
   <meta charset="UTF-8" />
-
-  <style></style>
+  <link
+    href="https://fonts.googleapis.com/css?family=Lato:400"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <link rel="stylesheet" type="text/css" href="animations.css" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
 
   <body>
-    <script src="./bundle.js"></script>
+    <script src="bundle.js"></script>
 
-    <h1>Deploy works!</h1>
-    <h2 id="test"></h2>
+    <div class="sections">
+      <div class="section black">
+        <h1>First section</h1>
+      </div>
+      <div class="section white">
+        <h1>Second section</h1>
+        <h2 data-keyscroll="slidein">Slide In</h2>
+        <h2 data-keyscroll="fadein">Fade In</h2>
+      </div>
+
+      <div class="section black">
+        <h2>Third Section</h2>
+      </div>
+    </div>
   </body>
 </html>

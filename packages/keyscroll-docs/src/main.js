@@ -1,6 +1,16 @@
-import {Dog} from './dog';
-import {sum} from 'keyscroll';
+import { keyscroller, elementAnimate } from "keyscroll";
 
-new Dog().bark();
-debugger;
-console.log(sum(1,2));
+
+keyscroller.initializeFromDomEvents();
+
+
+window.onload = () => {
+    debugger;
+    const elements = document.querySelectorAll('[data-keyscroll]');
+
+    for (const element of elements) {
+        const keyframe = element.getAttribute('data-keyscroll');
+
+        elementAnimate.attachAnimation(element, keyframe);
+    }
+}
