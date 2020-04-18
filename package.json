@@ -39,5 +39,8 @@
     "tsdx": "^0.13.2",
     "tslib": "^1.11.1",
     "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "rxjs": "^6.5.5"
   }
 }
