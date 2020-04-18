@@ -12,6 +12,7 @@
   "scripts": {
     "start": "echo Staring keyscroll library watch... && tsdx watch --target browser",
     "build": "tsdx build --target browser",
+    "lint": "tsdx lint src test",
     "test": "tsdx test --env=jsdom"
   }
 }

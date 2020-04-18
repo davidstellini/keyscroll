@@ -8,7 +8,9 @@
     "dev": "npm-run-all --parallel start watch",
     "serve": "live-server ./ --watch=./dist/bundle.js,./index.html",
     "start": "concurrently \"npm run watch\" \"npm run serve\"",
-    "publish:gh-pages": "",
+    "publish:gh-pages": "gh-pages -d ./dist",
+    "lint": "echo No linting for docs.",
+    "test": "echo No tests for docs.",
     "publish": "npm run publish:gh-pages"
   },
   "dependencies": {

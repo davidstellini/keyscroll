@@ -27,7 +27,7 @@ jobs:
           CI: true
 
       - name: Lint
-        run: yarn lint
+        run: npm run lint
         env:
           CI: true
 
