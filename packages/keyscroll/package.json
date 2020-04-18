@@ -1,0 +1,17 @@
+{
+  "name": "keyscroll",
+  "version": "0.1.0",
+  "description": "Simple keyframe animations that run while scrolling through the page.",
+  "main": "dist/index.js",
+  "umd:main": "dist/keyscroll.cjs.js",
+  "module": "dist/keyscroll.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "echo Staring keyscroll library watch... && tsdx watch --target browser",
+    "build": "tsdx build --target browser",
+    "test": "tsdx test --env=jsdom"
+  }
+}
