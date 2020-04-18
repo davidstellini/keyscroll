@@ -17,7 +17,8 @@ export default {
     plugins: [
         copy({
             targets: [
-                { src: 'src/index.html', dest: 'dist' }
+                { src: 'src/index.html', dest: 'dist' },
+                { src: 'src/**.css', dest: 'dist' }
             ]
         }),
         resolve(), // tells Rollup how to find date-fns in node_modules
