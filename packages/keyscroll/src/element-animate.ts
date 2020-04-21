@@ -2,25 +2,28 @@ import { cap } from './utils';
 import { filter, map } from 'rxjs/operators';
 import { keyscroller } from './keyscroller';
 
+export const animationDuration = 100;
+
 class ElementAnimate {
-  private getAnimationDelay(
+  public getAnimationDelay(
     element: HTMLElement,
     animationStartsFrom: number,
     animationEndsAt: number
   ) {
-    const windowHeight = window.innerHeight * animationEndsAt;
-    const elementOriginalTop =
+    const animateFrom = window.innerHeight * animationStartsFrom;
+    const animateTo = window.innerHeight * animationEndsAt;
+    const elementPosition =
       element.getBoundingClientRect().y +
       element.getBoundingClientRect().height / 2;
-    const elementTop =
-      elementOriginalTop + elementOriginalTop * animationStartsFrom;
+    const progress =
+      (elementPosition - animateFrom) / (animateTo - animateFrom);
 
-    const windowPercentage = elementTop / windowHeight;
+    const windowPercentage = progress;
 
-    const cappedPercentage = cap(windowPercentage, 0, 0.999);
+    const cappedPercentage = cap(windowPercentage, 0, 1);
     const reversed = 1 - cappedPercentage;
 
-    return cap(reversed * -1, -0.99, 0);
+    return +(cap(reversed * -1, -0.99, 0) * animationDuration).toFixed(2);
   }
 
   private initializeAnimation(
@@ -42,8 +45,8 @@ class ElementAnimate {
     keyframeName: string,
     config = {
       animationTiming: 'linear',
-      animationStartsFrom: 0,
-      animationEndsAt: 1,
+      animationStart: 0,
+      animationEnd: 1,
     }
   ) {
     this.initializeAnimation(element, keyframeName, config.animationTiming);
@@ -51,16 +54,15 @@ class ElementAnimate {
     return keyscroller.onScrollChange$
       .pipe(
         // takeUntil(keyscroller.destroy$),
-        map(
-          () =>
-            this.getAnimationDelay(
-              element,
-              config.animationStartsFrom,
-              config.animationEndsAt
-            ) * 100
+        map(() =>
+          this.getAnimationDelay(
+            element,
+            config.animationStart,
+            config.animationEnd
+          )
         ),
         // Filter out events off screen
-        filter((delay) => delay >= -100 && delay <= 0)
+        filter((delay) => delay >= -animationDuration && delay <= 0)
       )
       .subscribe((delay) => this.updateElementDelay(element, delay));
   }
