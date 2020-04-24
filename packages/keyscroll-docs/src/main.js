@@ -1,10 +1,14 @@
 import { keyscroller, elementAnimate } from "keyscroll";
+import { nativeSmoothScroll } from '@smoovy/scroller';
+import './index.scss';
 
-
-keyscroller.initializeFromDomEvents();
-
+ // import 'index.html';
 
 window.onload = () => {
+    const scroller = nativeSmoothScroll({ element: document.querySelector('.sections')});
+
+    keyscroller.initializeFromCallbackFn(scroller.onScroll.bind(scroller));
+
     const elements = document.querySelectorAll('[data-keyscroll]');
 
     for (const element of elements) {

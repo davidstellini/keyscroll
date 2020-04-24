@@ -27,6 +27,14 @@ class KeyframeScroller {
       });
   }
 
+  public initializeFromCallbackFn(callbackFn: any) {
+    this.initializeFrom(
+      new Observable((observer) => {
+        callbackFn((...args: any) => observer.next(args));
+      })
+    );
+  }
+
   public initializeFromElementStyleUpdates(element: Node) {
     this.throwErrorIfInitialized();
 
