@@ -7,7 +7,9 @@
     "watch": "rollup -cw",
     "dev": "npm run watch",
     "start": "npm run dev",
+    "g": "gh-pages --help",
     "publish:gh-pages": "gh-pages -d ./dist",
+    "publish:gh-pages:ci": "gh-pages -d ./dist",
     "lint": "echo No linting for docs.",
     "test": "echo No tests for docs.",
     "publish": "npm run publish:gh-pages"
@@ -15,5 +17,8 @@
   "dependencies": {
     "@smoovy/scroller": "^0.1.13",
     "keyscroll": "file:../keyscroll"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }

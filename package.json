@@ -14,7 +14,8 @@
     "dev": "lerna run dev --stream --parallel",
     "build": "lerna run build",
     "lint": "lerna run lint",
-    "test": "lerna run test"
+    "test": "lerna run test",
+    "publish:keyscroll-docs": "lerna run publish --"
   },
   "husky": {
     "hooks": {
