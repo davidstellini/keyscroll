@@ -41,15 +41,9 @@ jobs:
         env:
           CI: true
 
-      - name: Deploy docs to GitHub Pages
-        run: |
-          cd ./packages/keyscroll-docs
-          git init
-          git config --global user.name "${{ github.actor }}"
-          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
-          git remote add origin https://x-access-token:${{ secrets.PASSWORD }}@github.com/davidstellini/keyscroll
-          git checkout -b gh-pages
-          git add -A .
-          git commit -m "Deploying master to gh-pages"
-          git push -u origin gh-pages --force
-        if: github.ref == 'refs/heads/master'
+      - name: Deploy docs to github pages 🚀
+          uses: JamesIves/github-pages-deploy-action@releases/v3
+          with:
+            ACCESS_TOKEN: ${{ secrets.PASSWORD }}
+            BRANCH: gh-pages
+            FOLDER: ./packages/keyscroll-docs/dist

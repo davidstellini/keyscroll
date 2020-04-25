@@ -1,11 +1,8 @@
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
-import html from 'rollup-plugin-fill-html';
-import bundleScss from 'rollup-plugin-bundle-scss';
+import html from 'rollup-plugin-generate-html-template';
 import { terser } from 'rollup-plugin-terser';
-import copy from 'rollup-plugin-copy'
 import scss from 'rollup-plugin-scss';
-import postcss from 'rollup-plugin-postcss';
 import  liveServer from 'rollup-plugin-live-server';
 
 // `npm run build` -> `production` is true
@@ -22,7 +19,7 @@ export default {
     plugins: [
         html({
             template: 'src/index.html',
-            filename: 'index.html'
+            target: 'dist/index.html'
         }),
         scss({
             output: 'dist/bundle.css',
