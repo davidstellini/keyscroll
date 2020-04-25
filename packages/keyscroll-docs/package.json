@@ -19,6 +19,7 @@
     "keyscroll": "file:../keyscroll"
   },
   "devDependencies": {
+    "prettier": "^2.0.5",
     "rollup-plugin-generate-html-template": "^1.6.1"
   }
 }

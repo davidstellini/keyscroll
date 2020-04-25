@@ -41,9 +41,9 @@ jobs:
         env:
           CI: true
 
-      - name: Deploy docs to github pages 🚀
-          uses: JamesIves/github-pages-deploy-action@releases/v3
-          with:
-            ACCESS_TOKEN: ${{ secrets.PASSWORD }}
-            BRANCH: gh-pages
-            FOLDER: ./packages/keyscroll-docs/dist
+      - name: Deploy docs to github pages
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          ACCESS_TOKEN: ${{ secrets.PASSWORD }}
+          BRANCH: gh-pages
+          FOLDER: ./packages/keyscroll-docs/dist
