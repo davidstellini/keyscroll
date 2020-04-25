@@ -7,6 +7,8 @@ jobs:
     steps:
       - name: Begin CI...
         uses: actions/checkout@v2
+        with:
+          persist-credentials: false
 
       - name: Use Node 12
         uses: actions/setup-node@v1
@@ -22,9 +24,7 @@ jobs:
             nodeModules-
 
       - name: Install dependencies
-        run: |
-          apt-get update && apt-get install -y rsync
-          npm install --frozen-lockfile
+        run: npm install --frozen-lockfile
         env:
           CI: true
 
