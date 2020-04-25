@@ -1,0 +1,28 @@
+
+.sections {
+  overflow: scroll;
+  height: 100%;
+  overflow-x: hidden;
+
+  .section {
+    min-height: 800px;
+    width: 100vw;
+    margin: 0;
+    padding: 300px 0px;
+    text-align: center;
+
+    &.black {
+      background-color: black;
+      color: white;
+    }
+
+    &.white {
+      background-color: white;
+      color: black;
+    }
+  }
+
+
+
+}
+

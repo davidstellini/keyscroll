@@ -29,10 +29,11 @@ class ElementAnimate {
   private initializeAnimation(
     element: HTMLElement,
     keyframeName: string,
-    animationTiming: string
+    animationTiming: string,
+    direction: 'normal' | 'reverse'
   ) {
     element.style.animation =
-      keyframeName + ` 100s ${animationTiming} paused infinite`;
+      keyframeName + ` 100s ${animationTiming} paused infinite ${direction}`;
   }
 
   private updateElementDelay(element: HTMLElement, delay: number) {
@@ -49,7 +50,15 @@ class ElementAnimate {
       animationEnd: 1,
     }
   ) {
-    this.initializeAnimation(element, keyframeName, config.animationTiming);
+    const direction =
+      config.animationStart < config.animationEnd ? 'normal' : 'reverse';
+
+    this.initializeAnimation(
+      element,
+      keyframeName,
+      config.animationTiming,
+      direction
+    );
 
     return keyscroller.onScrollChange$
       .pipe(

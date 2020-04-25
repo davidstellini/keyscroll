@@ -1,0 +1,18 @@
+.black .box {
+  background-color: white;
+}
+
+.white .box {
+  background-color: white;
+}
+
+.box-container {
+  display: flex;
+
+  .box {
+    width: 10vw;
+    height: 10vw;
+    margin: 20px;
+  }
+
+}

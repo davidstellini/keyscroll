@@ -10,10 +10,11 @@
     "dist"
   ],
   "scripts": {
-    "start": "echo Staring keyscroll library watch... && tsdx watch --target browser",
-    "build": "tsdx build --target browser",
+    "start": "npm run dev",
+    "dev": "echo Staring keyscroll library watch... && tsdx watch --target browser --write-to-file",
+    "build": "tsdx build --target browser --write-to-file",
     "lint": "tsdx lint src test",
-    "test": "tsdx test --env=jsdom --write-file",
+    "test": "tsdx test --env=jsdom",
     "publish": "npm publish"
   }
 }
