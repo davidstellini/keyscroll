@@ -22,7 +22,9 @@ jobs:
             nodeModules-
 
       - name: Install dependencies
-        run: npm install --frozen-lockfile
+        run: |
+          apt-get update && apt-get install -y rsync
+          npm install --frozen-lockfile
         env:
           CI: true
 
@@ -47,5 +49,4 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.PASSWORD }}
           BRANCH: gh-pages
           FOLDER: packages/keyscroll-docs/dist
-          SINGLE_COMMIT: true
         if: github.ref == 'refs/heads/master'
