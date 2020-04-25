@@ -47,3 +47,8 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.PASSWORD }}
           BRANCH: gh-pages
           FOLDER: packages/keyscroll-docs/dist
+          SINGLE_COMMIT: true
+        on:
+          push:
+            branches:
+              - master
