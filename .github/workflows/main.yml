@@ -46,4 +46,4 @@ jobs:
         with:
           ACCESS_TOKEN: ${{ secrets.PASSWORD }}
           BRANCH: gh-pages
-          FOLDER: ./packages/keyscroll-docs/dist
+          FOLDER: packages/keyscroll-docs/dist
