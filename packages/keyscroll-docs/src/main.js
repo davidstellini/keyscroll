@@ -1,8 +1,6 @@
-import { keyscroller, elementAnimate } from "keyscroll";
-import { nativeSmoothScroll } from '@smoovy/scroller';
+import {elementAnimate, keyscroller} from "keyscroll";
+import {nativeSmoothScroll} from '@smoovy/scroller';
 import './index.scss';
-
- // import 'index.html';
 
 window.onload = () => {
     const scroller = nativeSmoothScroll({ element: document.querySelector('.sections')});
