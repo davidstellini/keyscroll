@@ -1,5 +1,4 @@
-import { elementAnimate } from '../src';
-import { animationDuration } from '../dist';
+import { animationDuration, elementAnimate } from '../src';
 
 const animationStart = 0;
 const animationEnd = 1 - animationDuration;
