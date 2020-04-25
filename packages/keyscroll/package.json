@@ -10,7 +10,6 @@
     "dist"
   ],
   "scripts": {
-    "postinstall": "npm run build",
     "start": "npm run dev",
     "dev": "echo Staring keyscroll library watch... && tsdx watch --target browser --write-to-file",
     "build": "tsdx build --target browser --write-to-file",
