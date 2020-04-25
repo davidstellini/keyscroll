@@ -17,8 +17,5 @@
   "dependencies": {
     "@smoovy/scroller": "^0.1.13",
     "keyscroll": "file:../keyscroll"
-  },
-  "devDependencies": {
-    "gh-pages": "^2.2.0"
   }
 }

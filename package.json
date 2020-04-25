@@ -17,11 +17,6 @@
     "test": "lerna run test",
     "publish:keyscroll-docs": "lerna run publish --"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
-    }
-  },
   "prettier": {
     "printWidth": 80,
     "semi": true,
