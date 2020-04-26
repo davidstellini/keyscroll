@@ -1,0 +1,15 @@
+.section.parallax {
+  img {
+    filter: grayscale(100%);
+  }
+
+  .background {
+    background-size: cover;
+    background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(https://placekitten.com/g/1080/700);
+    background-repeat: no-repeat;
+    height: 600px;
+    position: absolute;
+    width: 100vw;
+    top: 10%;
+  }
+}
