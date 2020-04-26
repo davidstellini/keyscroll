@@ -1,8 +1,10 @@
+
 .scene {
   width: 200px;
   height: 200px;
   margin: 200px auto;
   perspective: 300px;
+
 
   * { box-sizing: border-box; }
 
@@ -17,6 +19,12 @@
   }
 
   .cube__face {
+      --cubeTranslateZ: 100px;
+      --cubeRotateY: 0deg;
+      --cubeRotateX: 0deg;
+
+
+
     position: absolute;
     width: 200px;
     height: 200px;
@@ -26,14 +34,19 @@
     font-weight: bold;
     color: black;
     text-align: center;
+
+    transform: rotateY(var(--cubeRotateY))
+            rotateX(var(--cubeRotateX))
+            translateZ(var(--cubeTranslateZ));
+
   }
 
-  .cube__face--front  { transform: rotateY(  0deg) translateZ(100px); }
-  .cube__face--right  { transform: rotateY( 90deg) translateZ(100px); }
-  .cube__face--back   { transform: rotateY(180deg) translateZ(100px); }
-  .cube__face--left   { transform: rotateY(-90deg) translateZ(100px); }
-  .cube__face--top    { transform: rotateX( 90deg) translateZ(100px); }
-  .cube__face--bottom { transform: rotateX(-90deg) translateZ(100px); }
+  .cube__face--front  { --cubeRotateY:   0deg;  }
+  .cube__face--right  { --cubeRotateY:  90deg;  }
+  .cube__face--back   { --cubeRotateY: 180deg;  }
+  .cube__face--left   { --cubeRotateY: -90deg;  }
+  .cube__face--top    { --cubeRotateX:  90deg;  }
+  .cube__face--bottom { --cubeRotateX: -90deg;  }
 
   label { margin-right: 10px; }
 }

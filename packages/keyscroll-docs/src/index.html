@@ -50,7 +50,12 @@
         <div class="spacer"></div>
         <h2>Make fancy spinning cubes</h2>
         <div class="scene">
-          <div class="cube" data-keyscroll="spin-grow" data-keyscroll-start="-0.2" data-keyscroll-end="1.2">
+          <div
+            class="cube"
+            data-keyscroll="spin-grow"
+            data-keyscroll-start="-0.2"
+            data-keyscroll-end="1.2"
+          >
             <div class="cube__face cube__face--front"></div>
             <div class="cube__face cube__face--back"></div>
             <div class="cube__face cube__face--right"></div>
@@ -62,31 +67,66 @@
       </div>
 
       <div class="section white">
-        <h2 data-keyscroll="fade-in">Fade In</h2>
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+        <h2>or explode them</h2>
+        <div class="scene">
+          <div class="cube" data-keyscroll="spin-grow">
+            <div class="cube__face cube__face--front"></div>
+            <div data-keyscroll="cube-explode" class="cube__face cube__face--back"></div>
+            <div data-keyscroll="cube-explode" class="cube__face cube__face--right"></div>
+            <div data-keyscroll="cube-explode" class="cube__face cube__face--left"></div>
+            <div data-keyscroll="cube-explode" class="cube__face cube__face--top"></div>
+            <div data-keyscroll="cube-explode" class="cube__face cube__face--bottom"></div>
+          </div>
+        </div>
       </div>
 
-      <!--      <h2 data-keyscroll="scale-up-center">Scale Up Center</h2>-->
-      <!--      <div class="section black">-->
-      <!--        <h2 data-keyscroll="puff-in-center">Puff In Center</h2>-->
-      <!--      </div>-->
+      <div class="section white">
+        <div data-keyscroll="fade-in" class="box"></div>
+        <div data-keyscroll="fade-in" class="box"></div>
+        <div data-keyscroll="fade-in" class="box"></div>
+        <div data-keyscroll="fade-in" class="box"></div>
+        <h2 data-keyscroll="fade-in">Fade In</h2>
+        <div class="spacer"></div>
+        <h2>Vertically</h2>
+        <div class="box-container">
+          <div data-keyscroll="fade-in" data-keyscroll-start="0" class="box"></div>
+          <div data-keyscroll="fade-in" data-keyscroll-start="0.3" class="box"></div>
+          <div data-keyscroll="fade-in" data-keyscroll-start="0.6" class="box"></div>
+          <div data-keyscroll="fade-in" data-keyscroll-start="0.8" class="box"></div>
+        </div>
+        <div class="spacer"></div>
+        <div class="box-container">
+          <div
+            data-keyscroll="fade-in"
+            data-keyscroll-start="0.3"
+            data-keyscroll-end="0.8"
+            class="box"
+          ></div>
+          <div
+            data-keyscroll="fade-in"
+            data-keyscroll-start="0.3"
+            data-keyscroll-end="0.7"
+            class="box"
+          ></div>
+          <div
+            data-keyscroll="fade-in"
+            data-keyscroll-start="0.3"
+            data-keyscroll-end="0.6"
+            class="box"
+          ></div>
+          <div
+            data-keyscroll="fade-in"
+            data-keyscroll-start="0.3"
+            data-keyscroll-end="0.5"
+            class="box"
+          ></div>
+        </div>
 
-      <!--      <div class="section white">-->
-      <!--        <h2 data-keyscroll="tracking-in-expand">Tracking In Expand</h2>-->
-      <!--      </div>-->
-
-      <!--      <div class="section black">-->
-      <!--        <h2 data-keyscroll="text-pop-up-top">Pop up</h2>-->
-      <!--      </div>-->
-
-      <!--      <div class="section white"></div>-->
-
-      <!--      <div class="section black"></div>-->
-
-      <!--      <div class="section white"></div>-->
-
-      <!--      <div class="section black"></div>-->
-
-      <!--      <div class="section white"></div>-->
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+      </div>
     </div>
   </body>
 </html>

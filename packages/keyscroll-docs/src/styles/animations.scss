@@ -134,3 +134,20 @@
     transform: rotateY(360deg);
   }
 }
+
+
+@keyframes cube-explode {
+    0% {
+      --cubeTranslateZ: 100px;
+
+      transform: rotateY(var(--cubeRotateY))
+      rotateX(var(--cubeRotateX))
+      translateZ(var(--cubeTranslateZ));
+    }
+
+    100% {
+      transform: rotateY(var(--cubeRotateY))
+      rotateX(var(--cubeRotateX))
+      translateZ(400px);
+    }
+}
