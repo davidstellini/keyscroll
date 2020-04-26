@@ -33,8 +33,10 @@ class ElementAnimate {
     direction: 'normal' | 'reverse'
   ) {
     element.style.animation =
-      `${keyframeName} 100s ${animationTiming} paused infinite ${direction}`;
-    element.style.animationIterationCount = "1";
+      `${keyframeName} 100s ${animationTiming} ` +
+      `paused infinite ${direction}`;
+    element.style.animationIterationCount = '1';
+    element.style.animationFillMode = 'forwards';
   }
 
   private updateElementDelay(element: HTMLElement, delay: number) {
