@@ -1,12 +1,23 @@
-@keyframes slide-in {
+@keyframes slide-in-l {
   from {
-    transform: translateX(-50%);
+    transform: translateX(-70vw);
   }
 
   to {
-    transform: translateX(0%);
+    transform: translateX(0);
   }
 }
+
+@keyframes slide-in-r {
+  from {
+    transform: translateX(70vw);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
 
 @keyframes fade-in {
   from {

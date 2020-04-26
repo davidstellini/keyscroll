@@ -21,7 +21,15 @@
     "printWidth": 80,
     "semi": true,
     "singleQuote": true,
-    "trailingComma": "es5"
+    "trailingComma": "es5",
+    "overrides": [
+      {
+        "files": "*.html",
+        "options": {
+          "printWidth": 100
+        }
+      }
+    ]
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^11.1.0",
@@ -30,6 +38,7 @@
     "gh-pages": "^2.2.0",
     "husky": "^4.2.5",
     "lerna": "^3.20.2",
+    "prettier": "^2.0.5",
     "rollup": "^2.7.2",
     "rollup-plugin-bundle-scss": "^0.1.0",
     "rollup-plugin-copy": "^3.3.0",
