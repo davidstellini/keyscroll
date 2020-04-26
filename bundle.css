@@ -170,9 +170,8 @@ h3 {
   padding: 150px; }
 
 .sections {
-  overflow: scroll;
   height: 100%;
-  overflow-x: hidden; }
+  overflow: hidden; }
   .sections .section {
     min-height: 60vh;
     width: 100vw;
@@ -235,9 +234,9 @@ h3 {
 
 .section.parallax .background {
   background-size: cover;
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(https://placekitten.com/g/1080/700);
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://placekitten.com/g/1080/700);
   background-repeat: no-repeat;
   height: 600px;
   position: absolute;
   width: 100vw;
-  top: 10%; }
+  background-color: black; }
