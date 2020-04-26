@@ -8,7 +8,7 @@ import  liveServer from 'rollup-plugin-live-server';
 // `npm run build` -> `production` is true
 // `npm run dev` -> `production` is false
 const production = !process.env.ROLLUP_WATCH;
-const dist = '../../dist/';
+const dist = './dist/';
 
 export default {
     input: 'src/main.js',
