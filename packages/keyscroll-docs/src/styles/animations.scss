@@ -1,12 +1,23 @@
-@keyframes slide-in {
+@keyframes slide-in-l {
   from {
-    transform: translateX(-50%);
+    transform: translateX(-70vw);
   }
 
   to {
-    transform: translateX(0%);
+    transform: translateX(0);
   }
 }
+
+@keyframes slide-in-r {
+  from {
+    transform: translateX(70vw);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
 
 @keyframes fade-in {
   from {
@@ -111,5 +122,15 @@
     text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
       0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc,
       0 50px 30px rgba(0, 0, 0, 0.3);
+  }
+}
+
+
+@keyframes spin-grow {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
   }
 }

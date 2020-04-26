@@ -6,6 +6,6 @@ Work in progress. Todo:
 - npm publish fixes
 - angular support under packages/ngx-keysroll
 - better docs
-- automatic CI deployment of github pages on merge to master
+- ~~automatic CI deployment of github pages on merge to master~~
 
 Demo: https://davidstellini.github.io/keyscroll/

@@ -1,7 +1,7 @@
 import { animationDuration, elementAnimate } from '../src';
 
 const animationStart = 0;
-const animationEnd = 1 - animationDuration;
+const animationEnd = -animationDuration;
 const fakeWindowHeight = 1000;
 const fakeElementHeight = 200;
 // const fakeElementWidth = 100;

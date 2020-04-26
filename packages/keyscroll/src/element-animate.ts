@@ -23,7 +23,7 @@ class ElementAnimate {
     const cappedPercentage = cap(windowPercentage, 0, 1);
     const reversed = 1 - cappedPercentage;
 
-    return +(cap(reversed * -1, -0.99, 0) * animationDuration).toFixed(2);
+    return +(cap(reversed * -1, -1, 0) * animationDuration).toFixed(2);
   }
 
   private initializeAnimation(
@@ -33,7 +33,10 @@ class ElementAnimate {
     direction: 'normal' | 'reverse'
   ) {
     element.style.animation =
-      keyframeName + ` 100s ${animationTiming} paused infinite ${direction}`;
+      `${keyframeName} 100s ${animationTiming} ` +
+      `paused infinite ${direction}`;
+    element.style.animationIterationCount = '1';
+    element.style.animationFillMode = 'forwards';
   }
 
   private updateElementDelay(element: HTMLElement, delay: number) {

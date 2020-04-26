@@ -1,18 +1,47 @@
 .black .box {
   background-color: white;
+  color: black;
 }
 
 .white .box {
-  background-color: white;
+  background-color: black;
+  color: white;
+}
+
+
+.box {
+  width: 10vh;
+  height: 10vh;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-with-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .box {
+    margin: 50px;
+  }
+  h3 {
+    margin: 50px;
+    margin-left: 0;
+    opacity: 0.5;
+  }
+}
+
+.ml-50 {
+  margin-left: 50vw;
+}
+
+.ml-25 {
+  margin-left: 25vw;
 }
 
 .box-container {
   display: flex;
-
-  .box {
-    width: 10vw;
-    height: 10vw;
-    margin: 20px;
-  }
-
+  flex-direction: column;
 }
