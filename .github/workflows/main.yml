@@ -50,7 +50,7 @@ jobs:
       - name: Deploy docs to github pages
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-          ACCESS_TOKEN: ${{ secrets.PASSWORD }}
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: "dist"
+          FOLDER: dist
         if: github.ref == 'refs/heads/master'
