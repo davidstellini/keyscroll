@@ -8,21 +8,22 @@ import  liveServer from 'rollup-plugin-live-server';
 // `npm run build` -> `production` is true
 // `npm run dev` -> `production` is false
 const production = !process.env.ROLLUP_WATCH;
+const dist = '../../dist/';
 
 export default {
     input: 'src/main.js',
     output: {
-        file: 'dist/bundle.js',
+        file: dist + 'bundle.js',
         format: 'iife', // immediately-invoked function expression — suitable for <script> tags
         sourcemap: true
     },
     plugins: [
         html({
             template: 'src/index.html',
-            target: 'dist/index.html'
+            target: dist + 'index.html'
         }),
         scss({
-            output: 'dist/bundle.css',
+            output: dist + 'bundle.css',
 
         }),
         resolve(), // tells Rollup how to find date-fns in node_modules

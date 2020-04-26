@@ -3,3 +3,4 @@
 node_modules
 packages/keyscroll/dist
 packages/keyscroll-docs/dist
+dist

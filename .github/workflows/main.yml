@@ -52,5 +52,5 @@ jobs:
         with:
           ACCESS_TOKEN: ${{ secrets.PASSWORD }}
           BRANCH: gh-pages
-          FOLDER: "packages/keyscroll-docs/dist/"
+          FOLDER: "dist"
         if: github.ref == 'refs/heads/master'
