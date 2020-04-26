@@ -14,11 +14,11 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 12.x
-
-      - name: Install rsync
-        run: |
-          sudo apt-get update && sudo apt-get install -y rsync
-
+#
+#      - name: Install rsync
+#        run: |
+#          sudo apt-get update && sudo apt-get install -y rsync
+#
       - name: Use cached node_modules
         uses: actions/cache@v1
         with:
@@ -43,12 +43,12 @@ jobs:
           CI: true
 
       - name: Build
-        run: npm build
+        run: npm run build
         env:
           CI: true
 
       - name: Deploy docs to github pages
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+        uses: JamesIves/github-pages-deploy-action@3.4.8
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages

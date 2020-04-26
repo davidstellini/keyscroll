@@ -34,6 +34,7 @@
     "rollup-plugin-bundle-scss": "^0.1.0",
     "rollup-plugin-copy": "^3.3.0",
     "rollup-plugin-fill-html": "^1.1.0",
+    "rollup-plugin-generate-html-template": "^1.6.1",
     "rollup-plugin-html": "^0.2.1",
     "rollup-plugin-live-server": "^1.0.3",
     "rollup-plugin-postcss": "^3.1.1",
