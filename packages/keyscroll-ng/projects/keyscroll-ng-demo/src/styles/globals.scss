@@ -1,0 +1,31 @@
+* {
+	font-family: 'Lato';
+}
+
+body {
+	margin: 0;
+}
+
+h2 {
+	font-size: 48px;
+	margin: 0;
+	line-height: 1;
+
+	@media (min-width: 1680px) {
+		font-size: 80px;
+	}
+}
+
+h3 {
+	font-size: 40px;
+}
+
+.spacer {
+	padding: 8vh;
+}
+
+pre {
+	white-space: normal;
+	margin: 50px;
+	z-index: 99;
+}
