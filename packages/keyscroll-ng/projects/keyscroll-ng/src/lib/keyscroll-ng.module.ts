@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
-import { KeyscrollNgComponent } from './keyscroll-ng.component';
+import { KeyscrollDirective } from './keyscroll.directive';
 
 @NgModule({
-  declarations: [KeyscrollNgComponent],
+  declarations: [KeyscrollDirective],
   imports: [],
-  exports: [KeyscrollNgComponent],
+  exports: [KeyscrollDirective],
 })
 export class KeyscrollNgModule {}
