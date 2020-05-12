@@ -17,6 +17,7 @@
     "lint": "tsdx lint src test",
     "lint:fix": "tsdx lint src test --fix",
     "test": "tsdx test",
+    "test:ci": "npm run test",
     "publish": "npm publish"
   }
 }

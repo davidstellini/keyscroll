@@ -13,6 +13,7 @@
     "publish:gh-pages:ci": "gh-pages -d ./dist",
     "lint": "echo No linting for docs.",
     "test": "echo No tests for docs.",
+    "test:ci": "npm run test",
     "publish": "npm run publish:gh-pages"
   },
   "dependencies": {
