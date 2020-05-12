@@ -15,7 +15,7 @@
     "build": "tsdx build --target browser --write-to-file",
     "lint": "tsdx lint src test",
     "lint:fix": "tsdx lint src test --fix",
-    "test": "tsdx test --env=jsdom",
+    "test": "tsdx test",
     "publish": "npm publish"
   }
 }
