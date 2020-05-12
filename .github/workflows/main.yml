@@ -39,7 +39,7 @@ jobs:
           CI: true
 
       - name: Test
-        run: npm test:ci --maxWorkers=1
+        run: npm run test:ci --maxWorkers=1
         env:
           CI: true
 
