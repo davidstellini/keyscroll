@@ -2,7 +2,6 @@
 	from {
 		transform: translateX(-70vw);
 	}
-
 	to {
 		transform: translateX(0);
 	}
@@ -12,7 +11,6 @@
 	from {
 		transform: translateX(70vw);
 	}
-
 	to {
 		transform: translateX(0);
 	}
@@ -22,7 +20,6 @@
 	from {
 		transform: translateY(0);
 	}
-
 	to {
 		transform: translateY(-100%);
 	}
@@ -32,7 +29,6 @@
 	from {
 		transform: translateY(0);
 	}
-
 	to {
 		transform: translateY(100%);
 	}
@@ -42,7 +38,6 @@
 	from {
 		opacity: 0;
 	}
-
 	to {
 		opacity: 1;
 	}
@@ -60,6 +55,7 @@
 		opacity: 1;
 	}
 }
+
 @keyframes text-blur-out {
 	0% {
 		filter: blur(0);
@@ -69,6 +65,7 @@
 		filter: blur(12px) opacity(0);
 	}
 }
+
 @keyframes scale-up-center {
 	0% {
 		-webkit-transform: scale(0.5);
@@ -79,6 +76,7 @@
 		transform: scale(1);
 	}
 }
+
 @keyframes swing-in-top-fwd {
 	0% {
 		-webkit-transform: rotateX(-100deg);
@@ -95,6 +93,7 @@
 		opacity: 1;
 	}
 }
+
 @keyframes puff-in-center {
 	0% {
 		-webkit-transform: scale(2);
@@ -111,6 +110,7 @@
 		opacity: 1;
 	}
 }
+
 @keyframes tracking-in-expand {
 	0% {
 		letter-spacing: -0.5em;
@@ -123,7 +123,6 @@
 		opacity: 1;
 	}
 }
-
 @keyframes text-pop-up-top {
 	0% {
 		-webkit-transform: translateY(0);
@@ -155,11 +154,9 @@
 @keyframes cube-explode {
 	0% {
 		--cubeTranslateZ: 100px;
-
 		transform: rotateY(var(--cubeRotateY)) rotateX(var(--cubeRotateX))
 			translateZ(var(--cubeTranslateZ));
 	}
-
 	100% {
 		transform: rotateY(var(--cubeRotateY)) rotateX(var(--cubeRotateX))
 			translateZ(400px);

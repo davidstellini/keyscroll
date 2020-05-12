@@ -10,7 +10,9 @@
   "description": "Monorepo for keyscroll.",
   "scripts": {
     "move-to-root": "lerna link convert",
-    "postinstall": "lerna bootstrap",
+    "local-server": "npx http-server ./dist",
+    "install-packages": "lerna exec npm i",
+    "postinstall": "npm run install-packages && lerna bootstrap --force-local --hoist --ci ",
     "start": "lerna run start --stream --parallel",
     "dev": "lerna run dev --stream --parallel",
     "build": "lerna run build && npm run post-build",
@@ -43,6 +45,7 @@
     "@angular-devkit/build-angular": "~0.901.4",
     "@angular-devkit/build-ng-packagr": "~0.901.4",
     "@angular/cli": "~9.1.0",
+    "@angular/compiler": "~9.1.0",
     "@angular/compiler-cli": "~9.1.0",
     "@angular/language-service": "~9.1.0",
     "@rollup/plugin-commonjs": "^11.1.0",
