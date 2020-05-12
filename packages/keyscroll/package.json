@@ -14,6 +14,7 @@
     "dev": "echo Staring keyscroll library watch... && tsdx watch --target browser --write-to-file",
     "build": "tsdx build --target browser --write-to-file",
     "lint": "tsdx lint src test",
+    "lint:fix": "tsdx lint src test --fix",
     "test": "tsdx test --env=jsdom",
     "publish": "npm publish"
   }

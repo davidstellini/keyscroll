@@ -86,6 +86,7 @@
     "typescript": "~3.8.3"
   },
   "dependencies": {
+    "@angular/core": "~9.1.0",
     "keyscroll": "file:packages/keyscroll",
     "keyscroll-docs": "file:packages/keyscroll-docs",
     "keyscroll-ng": "file:packages/keyscroll-ng"

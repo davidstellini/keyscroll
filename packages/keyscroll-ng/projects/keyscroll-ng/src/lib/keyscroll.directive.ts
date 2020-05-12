@@ -12,8 +12,8 @@ import { ElementAnimateService } from './element-animate.service';
 })
 export class KeyscrollDirective implements OnChanges {
   @Input() keyscroll: string;
-  @Input() keyscrollStart: number = 0;
-  @Input() keyscrollEnd: number = 1;
+  @Input() keyscrollStart = 0;
+  @Input() keyscrollEnd = 1;
 
   constructor(
     private elRef: ElementRef,
