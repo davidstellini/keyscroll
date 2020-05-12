@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Docs and example for keyscroll.",
   "scripts": {
+    "clean": "rm -rf ./node_modules && rm -rf ./dist",
     "build": "rollup -c",
     "watch": "rollup -cw",
     "dev": "npm run watch",
@@ -12,6 +13,7 @@
     "publish:gh-pages:ci": "gh-pages -d ./dist",
     "lint": "echo No linting for docs.",
     "test": "echo No tests for docs.",
+    "test:ci": "npm run test",
     "publish": "npm run publish:gh-pages"
   },
   "dependencies": {
