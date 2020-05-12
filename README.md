@@ -8,4 +8,9 @@ Work in progress. Todo:
 - better docs
 - ~~automatic CI deployment of github pages on merge to master~~
 
-Demo: https://davidstellini.github.io/keyscroll/
+Angular Demo:
+https://davidstellini.github.io/keyscroll/keyscroll-ng/
+
+
+Vanilla JS Demo:
+https://davidstellini.github.io/keyscroll/keyscroll-docs
