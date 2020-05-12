@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Docs and example for keyscroll.",
   "scripts": {
+    "clean": "rm -rf ./node_modules && rm -rf ./dist",
     "build": "rollup -c",
     "watch": "rollup -cw",
     "dev": "npm run watch",

@@ -2,6 +2,7 @@
   "name": "keyscroll-ng",
   "version": "0.1.0",
   "scripts": {
+    "clean": "rm -rf ./node_modules && rm -rf ./dist",
     "ng": "ng",
     "start": "npm run start:keyscroll-ng-demo",
     "start:keyscroll-ng-demo": "ng serve --project keyscroll-ng-demo",

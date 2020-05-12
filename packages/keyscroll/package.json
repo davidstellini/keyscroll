@@ -10,6 +10,7 @@
     "dist"
   ],
   "scripts": {
+    "clean": "rm -rf ./node_modules && rm -rf ./dist",
     "start": "npm run dev",
     "dev": "echo Staring keyscroll library watch... && tsdx watch --target browser --write-to-file",
     "build": "tsdx build --target browser --write-to-file",
