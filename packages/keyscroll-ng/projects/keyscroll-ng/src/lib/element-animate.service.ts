@@ -13,5 +13,5 @@ export class ElementAnimateService {
       animationStart: 0,
       animationEnd: 1,
     }
-  ) => elementAnimate.attachAnimation(element, keyframeName, config);
+  ) => elementAnimate.attachAnimation(element, keyframeName, config)
 }
