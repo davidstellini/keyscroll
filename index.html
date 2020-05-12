@@ -1,170 +1,20 @@
-<!DOCTYPE html>
-<html>
-  <title>Keyscroll Docs</title>
-  <meta charset="UTF-8" />
-  <link href="https://fonts.googleapis.com/css?family=Lato:400" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" type="text/css" href="bundle.css" />
-
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <base href="/" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
   <body>
-    <div class="sections">
-      <div class="section black">
-        <h2>Slide In</h2>
-        <div class="box"></div>
-        <div data-keyscroll="slide-in-l" class="box"></div>
-        <div data-keyscroll="slide-in-l" class="box"></div>
-        <div data-keyscroll="slide-in-r" class="box"></div>
-        <div data-keyscroll="slide-in-r" class="box"></div>
-        <div class="box"></div>
-        <div class="spacer"></div>
-        <h2>Control speed</h2>
-        <div data-keyscroll="slide-in-l" data-keyscroll-start="0.2" class="box-with-text">
-          <div class="box"></div>
-          <h3>+20%</h3>
-        </div>
-        <div data-keyscroll="slide-in-l" data-keyscroll-start="0.4" class="box-with-text">
-          <div class="box"></div>
-          <h3>+40%</h3>
-        </div>
-        <div data-keyscroll="slide-in-l" data-keyscroll-start="0.6" class="box-with-text">
-          <div class="box"></div>
-          <h3>+60%</h3>
-        </div>
-        <div data-keyscroll="slide-in-l" data-keyscroll-start="0.8" class="box-with-text">
-          <div class="box"></div>
-          <h3>+80%</h3>
-        </div>
-      </div>
-      <div class="section white">
-        <h2 data-keyscroll="text-blur-out" data-keyscroll-end="0.3">
-          Text Blur Out
-        </h2>
-      </div>
-
-      <div class="section black">
-        <h2 data-keyscroll="text-focus-in" data-keyscroll-start="1" data-keyscroll-end="0.8">
-          Text Focus In
-        </h2>
-      </div>
-
-      <div class="section white">
-        <div class="spacer"></div>
-        <h2>Make fancy spinning cubes</h2>
-        <div class="scene">
-          <div
-            class="cube"
-            data-keyscroll="spin-grow"
-            data-keyscroll-start="-0.2"
-            data-keyscroll-end="1.2"
-          >
-            <div class="cube__face cube__face--front"></div>
-            <div class="cube__face cube__face--back"></div>
-            <div class="cube__face cube__face--right"></div>
-            <div class="cube__face cube__face--left"></div>
-            <div class="cube__face cube__face--top"></div>
-            <div class="cube__face cube__face--bottom"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="section white">
-        <div class="spacer"></div>
-        <div class="spacer"></div>
-        <h2>or explode them</h2>
-        <div class="scene">
-          <div class="cube" data-keyscroll="spin-grow">
-            <div class="cube__face cube__face--front"></div>
-            <div data-keyscroll="cube-explode" class="cube__face cube__face--back"></div>
-            <div data-keyscroll="cube-explode" class="cube__face cube__face--right"></div>
-            <div data-keyscroll="cube-explode" class="cube__face cube__face--left"></div>
-            <div data-keyscroll="cube-explode" class="cube__face cube__face--top"></div>
-            <div data-keyscroll="cube-explode" class="cube__face cube__face--bottom"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="section white">
-        <div data-keyscroll="fade-in" class="box"></div>
-        <div data-keyscroll="fade-in" class="box"></div>
-        <div data-keyscroll="fade-in" class="box"></div>
-        <div data-keyscroll="fade-in" class="box"></div>
-        <h2 data-keyscroll="fade-in">Fade In</h2>
-        <div class="spacer"></div>
-        <h2>Vertically</h2>
-        <div class="box-container">
-          <div data-keyscroll="fade-in" data-keyscroll-start="0" class="box"></div>
-          <div data-keyscroll="fade-in" data-keyscroll-start="0.3" class="box"></div>
-          <div data-keyscroll="fade-in" data-keyscroll-start="0.6" class="box"></div>
-          <div data-keyscroll="fade-in" data-keyscroll-start="0.8" class="box"></div>
-        </div>
-        <div class="spacer"></div>
-        <div class="box-container">
-          <div
-            data-keyscroll="fade-in"
-            data-keyscroll-start="0.3"
-            data-keyscroll-end="0.8"
-            class="box"
-          ></div>
-          <div
-            data-keyscroll="fade-in"
-            data-keyscroll-start="0.3"
-            data-keyscroll-end="0.7"
-            class="box"
-          ></div>
-          <div
-            data-keyscroll="fade-in"
-            data-keyscroll-start="0.3"
-            data-keyscroll-end="0.6"
-            class="box"
-          ></div>
-          <div
-            data-keyscroll="fade-in"
-            data-keyscroll-start="0.3"
-            data-keyscroll-end="0.5"
-            class="box"
-          ></div>
-        </div>
-
-        <div class="spacer"></div>
-        <div class="spacer"></div>
-      </div>
-
-      <div class="section white images parallax">
-        <div class="background" data-keyscroll-start="slide-up"></div>
-        <img
-          data-keyscroll-start="0"
-          data-keyscroll-end="0.8"
-          data-keyscroll="slide-up"
-          src="https://placekitten.com/200/286"
-          alt=""
-        />
-        <img
-          data-keyscroll-start="0"
-          data-keyscroll-end="0.9"
-          data-keyscroll="slide-up"
-          src="https://placekitten.com/96/140"
-          alt=""
-        />
-        <img
-          data-keyscroll-start="0"
-          data-keyscroll-end="1"
-          data-keyscroll="slide-down"
-          src="https://placekitten.com/96/139"
-          alt=""
-        />
-        <img
-          data-keyscroll-start="0.2"
-          data-keyscroll-end="1"
-          data-keyscroll="slide-up"
-          src="https://placekitten.com/200/138"
-          alt=""
-        />
-      </div>
-      <div class="section white">
-        <h2 data-keyscroll="fade-in" data-keyscroll-start="1" data-keyscroll-end="0.6">
-          Happy scrolling!
-        </h2>
-      </div>
+    <div>
+      <a href="../keyscroll-docs"><h2>Demo</h2></a>
+      <a href="../keyscroll-ng"><h2>Angular Demo</h2></a>
     </div>
-  <script  src="bundle.js"></script>
-</body>
+  </body>
 </html>
