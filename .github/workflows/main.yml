@@ -14,11 +14,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 12.x
-#
-#      - name: Install rsync
-#        run: |
-#          sudo apt-get update && sudo apt-get install -y rsync
-#
+
       - name: Use cached node_modules
         uses: actions/cache@v1
         with:
@@ -37,10 +33,10 @@ jobs:
         env:
           CI: true
 
-      - name: Test
-        run: npm test --ci --coverage --maxWorkers=2
-        env:
-          CI: true
+      #      - name: Test
+      #        run: npm test --ci --coverage --maxWorkers=2
+      #        env:
+      #          CI: true
 
       - name: Build
         run: npm run build
@@ -52,5 +48,5 @@ jobs:
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: packages/keyscroll-docs/dist
+          FOLDER: dist/keyscroll
         if: github.ref == 'refs/heads/master'

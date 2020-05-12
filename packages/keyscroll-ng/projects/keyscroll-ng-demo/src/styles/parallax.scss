@@ -1,0 +1,17 @@
+.section.parallax {
+	img {
+		filter: grayscale(100%);
+	}
+
+	.background {
+		background-size: cover;
+		background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+			url(https://i.pinimg.com/originals/58/46/38/584638a2a165822465730ff2839e5278.jpg);
+		background-repeat: no-repeat;
+		background-position: center center;
+		height: 600px;
+		position: absolute;
+		width: 100vw;
+		background-color: black;
+	}
+}

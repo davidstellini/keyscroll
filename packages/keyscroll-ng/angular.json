@@ -1,0 +1,258 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "keyscroll-ng": {
+      "projectType": "library",
+      "root": "projects/keyscroll-ng",
+      "sourceRoot": "projects/keyscroll-ng/src",
+      "prefix": "keyscroll",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/keyscroll-ng/tsconfig.lib.json",
+            "project": "projects/keyscroll-ng/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/keyscroll-ng/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/keyscroll-ng/src/test.ts",
+            "tsConfig": "projects/keyscroll-ng/tsconfig.spec.json",
+            "karmaConfig": "projects/keyscroll-ng/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/keyscroll-ng/tsconfig.lib.json",
+              "projects/keyscroll-ng/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "keyscroll-ng-demo": {
+      "root": "projects/keyscroll-ng-demo/",
+      "sourceRoot": "projects/keyscroll-ng-demo/src",
+      "projectType": "application",
+      "prefix": "app",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/keyscroll-ng-demo",
+            "index": "projects/keyscroll-ng-demo/src/index.html",
+            "main": "projects/keyscroll-ng-demo/src/main.ts",
+            "polyfills": "projects/keyscroll-ng-demo/src/polyfills.ts",
+            "tsConfig": "projects/keyscroll-ng-demo/tsconfig.app.json",
+            "assets": [
+              "projects/keyscroll-ng-demo/src/favicon.ico",
+              "projects/keyscroll-ng-demo/src/assets"
+            ],
+            "styles": [
+              "projects/keyscroll-ng-demo/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/keyscroll-ng-demo/src/environments/environment.ts",
+                  "with": "projects/keyscroll-ng-demo/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "keyscroll-ng-demo:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "keyscroll-ng-demo:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "keyscroll-ng-demo:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/keyscroll-ng-demo/src/test.ts",
+            "polyfills": "projects/keyscroll-ng-demo/src/polyfills.ts",
+            "tsConfig": "projects/keyscroll-ng-demo/tsconfig.spec.json",
+            "karmaConfig": "projects/keyscroll-ng-demo/karma.conf.js",
+            "styles": [
+              "projects/keyscroll-ng-demo/src/styles.css"
+            ],
+            "scripts": [],
+            "assets": [
+              "projects/keyscroll-ng-demo/src/favicon.ico",
+              "projects/keyscroll-ng-demo/src/assets"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/keyscroll-ng-demo/tsconfig.app.json",
+              "projects/keyscroll-ng-demo/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "keyscroll-ng-demo": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "projects/keyscroll-ng-demo",
+      "sourceRoot": "projects/keyscroll-ng-demo/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/keyscroll-ng-demo",
+            "index": "projects/keyscroll-ng-demo/src/index.html",
+            "main": "projects/keyscroll-ng-demo/src/main.ts",
+            "polyfills": "projects/keyscroll-ng-demo/src/polyfills.ts",
+            "tsConfig": "projects/keyscroll-ng-demo/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "projects/keyscroll-ng-demo/src/favicon.ico",
+              "projects/keyscroll-ng-demo/src/assets"
+            ],
+            "styles": [
+              "projects/keyscroll-ng-demo/src/styles.scss"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/keyscroll-ng-demo/src/environments/environment.ts",
+                  "with": "projects/keyscroll-ng-demo/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "keyscroll-ng-demo:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "keyscroll-ng-demo:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "keyscroll-ng-demo:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/keyscroll-ng-demo/src/test.ts",
+            "polyfills": "projects/keyscroll-ng-demo/src/polyfills.ts",
+            "tsConfig": "projects/keyscroll-ng-demo/tsconfig.spec.json",
+            "karmaConfig": "projects/keyscroll-ng-demo/karma.conf.js",
+            "assets": [
+              "projects/keyscroll-ng-demo/src/favicon.ico",
+              "projects/keyscroll-ng-demo/src/assets"
+            ],
+            "styles": [
+              "projects/keyscroll-ng-demo/src/styles.scss"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/keyscroll-ng-demo/tsconfig.app.json",
+              "projects/keyscroll-ng-demo/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": false
+  },
+  "defaultProject": "keyscroll-ng"
+}

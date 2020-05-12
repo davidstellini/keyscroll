@@ -1,0 +1,32 @@
+{
+  "name": "keyscroll-ng",
+  "version": "0.1.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "npm run start:keyscroll-ng-demo",
+    "start:keyscroll-ng-demo": "ng serve --project keyscroll-ng-demo",
+    "build": "npm run build:keyscroll-ng && npm run build:demo",
+    "build:keyscroll-ng": "ng build --project=keyscroll-ng --prod",
+    "build:demo": "ng build --project=keyscroll-ng-demo --prod  --deploy-url=/keyscroll/keyscroll-ng/ --base-href=/keyscroll/keyscroll-ng/",
+    "test": "ng test --watch=false",
+    "lint": "ng lint",
+    "lint:fix": "ng lint --fix",
+    "e2e": "ng e2e"
+  },
+  "dependencies": {
+    "@angular/animations": "~9.1.0",
+    "@angular/common": "~9.1.0",
+    "@angular/compiler": "~9.1.0",
+    "@angular/core": "~9.1.0",
+    "@angular/forms": "~9.1.0",
+    "@angular/platform-browser": "~9.1.0",
+    "@angular/platform-browser-dynamic": "~9.1.0",
+    "@angular/router": "~9.1.0",
+    "@smoovy/scroller": "^0.1.13",
+    "keyscroll": "file:../keyscroll",
+    "ngx-highlightjs": "^4.1.0-beta",
+    "rxjs": "~6.5.4",
+    "tslib": "^1.10.0",
+    "zone.js": "~0.10.2"
+  }
+}

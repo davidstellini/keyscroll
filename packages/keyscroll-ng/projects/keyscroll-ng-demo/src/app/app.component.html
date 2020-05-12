@@ -1,0 +1,193 @@
+<div class="sections" #sections>
+  <div class="section black">
+    <h2>Slide In</h2>
+    <pre class="code-box-right">
+      <code [lineNumbers]="true" [highlight]="slideInLeft.css"></code>
+      <code [lineNumbers]="true" [highlight]="slideInLeft.html"></code>
+    </pre>
+    <div class="box"></div>
+    <div class="box" keyscroll="slide-in-left"></div>
+    <div class="box" keyscroll="slide-in-left"></div>
+    <div class="box" keyscroll="slide-in-right"></div>
+    <div class="box" keyscroll="slide-in-right"></div>
+    <div class="box"></div>
+  </div>
+  <div class="section black">
+    <h2>Control speed</h2>
+    <pre class="code-box-right"><code [highlight]="controlSpeed.html"
+                                 [lineNumbers]="true"></code></pre>
+
+    <div keyscroll="slide-in-left" keyscrollStart="0.2" class="box-with-text">
+      <div class="box"></div>
+      <h3>+20%</h3>
+    </div>
+
+    <div keyscroll="slide-in-left" keyscrollStart="0.4" class="box-with-text">
+      <div class="box"></div>
+      <h3>+40%</h3>
+    </div>
+
+    <div keyscroll="slide-in-left" keyscrollStart="0.6" class="box-with-text">
+      <div class="box"></div>
+      <h3>+60%</h3>
+    </div>
+
+    <div keyscroll="slide-in-left" keyscrollStart="0.8" class="box-with-text">
+      <div class="box"></div>
+      <h3>+80%</h3>
+    </div>
+  </div>
+  <div class="section white">
+    <h2>
+      Text Blur Out
+    </h2>
+    <div class="content-with-code switch-order-sm-screen">
+      <p keyscroll="text-blur-out" keyscrollEnd="0.3" class="lorem-ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <pre>
+        <code [highlight]="textBlurOut.css"></code>
+        <code [highlight]="textBlurOut.html"></code>
+      </pre>
+    </div>
+  </div>
+
+  <div class="section black">
+    <h2>
+      Text Focus In
+    </h2>
+    <div class="content-with-code switch-order-sm-screen">
+      <p keyscroll="text-focus-in" keyscrollStart="1" keyscrollEnd="0.8" class="lorem-ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <pre>
+        <code [highlight]="textFocusIn.css"></code>
+        <code [highlight]="textFocusIn.html"></code>
+      </pre>
+    </div>
+  </div>
+
+  <div class="section white">
+    <h2>Make fancy spinning cubes</h2>
+    <pre class="code-box-right">
+      <code [highlight]="spinGrow.css"></code>
+      <code [highlight]="spinGrow.html"></code>
+    </pre>
+    <div class="scene">
+      <div class="cube" keyscroll="spin-grow" keyscrollStart="-0.2" keyscrollEnd="1.2">
+        <div class="cube__face cube__face--front"></div>
+        <div class="cube__face cube__face--back"></div>
+        <div class="cube__face cube__face--right"></div>
+        <div class="cube__face cube__face--left"></div>
+        <div class="cube__face cube__face--top"></div>
+        <div class="cube__face cube__face--bottom"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section white">
+    <h2>or explode them</h2>
+    <pre class="code-box-right">
+      <code [highlight]="cubeExplode.css"></code>
+      <code [highlight]="cubeExplode.html"></code>
+    </pre>
+    <div class="scene">
+      <div class="cube" keyscroll="spin-grow">
+        <div class="cube__face cube__face--front"></div>
+        <div keyscroll="cube-explode" class="cube__face cube__face--back"></div>
+        <div keyscroll="cube-explode" class="cube__face cube__face--right"></div>
+        <div keyscroll="cube-explode" class="cube__face cube__face--left"></div>
+        <div keyscroll="cube-explode" class="cube__face cube__face--top"></div>
+        <div keyscroll="cube-explode" class="cube__face cube__face--bottom"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section white">
+    <h2>Fade In</h2>
+    <pre class="code-box-right">
+      <code [highlight]="fadeInVertical.css"></code>
+      <code [highlight]="fadeInVertical.html"></code>
+    </pre>
+    <div keyscroll="fade-in" class="box"></div>
+    <div keyscroll="fade-in" class="box"></div>
+    <div keyscroll="fade-in" class="box"></div>
+    <div keyscroll="fade-in" class="box"></div>
+  </div>
+
+  <div class="section white">
+    <h2>Horizontally</h2>
+    <div class="content-with-code switch-order-sm-screen">
+      <div class="flex">
+        <div class="box-container">
+          <div keyscroll="fade-in" keyscrollStart="0" class="box"></div>
+          <div keyscroll="fade-in" keyscrollStart="0.3" class="box"></div>
+          <div keyscroll="fade-in" keyscrollStart="0.6" class="box"></div>
+          <div keyscroll="fade-in" keyscrollStart="0.8" class="box"></div>
+        </div>
+        <div class="spacer"></div>
+        <div class="box-container">
+          <div keyscroll="fade-in" keyscrollStart="0.3" keyscrollEnd="0.8" class="box"></div>
+          <div keyscroll="fade-in" keyscrollStart="0.3" keyscrollEnd="0.7" class="box"></div>
+          <div keyscroll="fade-in" keyscrollStart="0.3" keyscrollEnd="0.6" class="box"></div>
+          <div keyscroll="fade-in" keyscrollStart="0.3" keyscrollEnd="0.5" class="box"></div>
+        </div>
+      </div>
+      <pre>
+      <code [highlight]="fadeInHorizontal.html"></code>
+    </pre>
+    </div>
+    <div class="spacer"></div>
+  </div>
+
+  <div class="section white images parallax">
+    <pre class="code-box-right">
+      <code [highlight]="slideUp.css"></code>
+      <code [highlight]="slideUp.html"></code>
+    </pre>
+    <div class="background" keyscrollStart="slide-up"></div>
+    <div>
+      <img
+        keyscrollStart="0"
+        keyscrollEnd="0.8"
+        keyscroll="slide-up"
+        src="https://placekitten.com/200/286"
+        alt=""
+      />
+      <img
+        keyscrollStart="0"
+        keyscrollEnd="0.9"
+        keyscroll="slide-up"
+        src="https://placekitten.com/96/140"
+        alt=""
+      />
+      <img
+        keyscrollStart="0"
+        keyscrollEnd="1"
+        keyscroll="slide-down"
+        src="https://placekitten.com/96/139"
+        alt=""
+      />
+      <img
+        keyscrollStart="0.2"
+        keyscrollEnd="1"
+        keyscroll="slide-up"
+        src="https://placekitten.com/200/138"
+        alt=""
+      />
+    </div>
+  </div>
+  <div class="section white">
+    <h2 keyscroll="fade-in" keyscrollStart="1" keyscrollEnd="0.6">
+      Happy scrolling!
+    </h2>
+  </div>
+</div>

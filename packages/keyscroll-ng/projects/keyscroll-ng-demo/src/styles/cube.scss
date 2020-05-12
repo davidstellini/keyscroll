@@ -1,0 +1,53 @@
+
+.scene {
+  width: 200px;
+  height: 200px;
+  margin: 200px auto;
+  perspective: 300px;
+
+
+  * { box-sizing: border-box; }
+
+
+  .cube {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: translateZ(-100px);
+    transition: transform 1s;
+  }
+
+  .cube__face {
+      --cubeTranslateZ: 100px;
+      --cubeRotateY: 0deg;
+      --cubeRotateX: 0deg;
+
+
+
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    line-height: 200px;
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+
+    transform: rotateY(var(--cubeRotateY))
+            rotateX(var(--cubeRotateX))
+            translateZ(var(--cubeTranslateZ));
+
+  }
+
+  .cube__face--front  { --cubeRotateY:   0deg;  }
+  .cube__face--right  { --cubeRotateY:  90deg;  }
+  .cube__face--back   { --cubeRotateY: 180deg;  }
+  .cube__face--left   { --cubeRotateY: -90deg;  }
+  .cube__face--top    { --cubeRotateX:  90deg;  }
+  .cube__face--bottom { --cubeRotateX: -90deg;  }
+
+  label { margin-right: 10px; }
+}
+

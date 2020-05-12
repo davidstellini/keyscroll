@@ -1,0 +1,29 @@
+.sections {
+	height: 100%;
+	overflow: hidden;
+
+	.section {
+		min-height: 60vh;
+		width: 100vw;
+
+		margin: -2px 0; //-2px Forces one section to slightly overlay another;
+		// preventing a line / flicker sometimes appearing between sections.
+
+		padding: 30vh 0;
+		text-align: center;
+		position: relative;
+
+		display: flex;
+		flex-direction: column;
+
+		&.black {
+			background-color: black;
+			color: white;
+		}
+
+		&.white {
+			background-color: white;
+			color: black;
+		}
+	}
+}

@@ -1,6 +1,8 @@
 {
   "packages": [
-    "packages/*"
+    "packages/keyscroll",
+    "packages/keyscroll-docs",
+    "packages/keyscroll-ng"
   ],
   "version": "0.1.0"
 }
