@@ -19,7 +19,7 @@
     "build": "lerna run build --stream && npm run post-build",
     "post-build": "sh ./post-build.sh",
     "lint": "lerna run lint",
-    "test": "lerna run test",
+    "test": "lerna run test --stream",
     "publish:keyscroll-docs": "lerna run publish --"
   },
   "prettier": {
