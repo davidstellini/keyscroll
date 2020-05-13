@@ -93,7 +93,7 @@ Modules are resolved in package.json via relative paths:
 ### Build the project
 The project can be built for production by running:
 `$ npm run build`
-Again, the command will build all packages. The result from the build can be found in the  `./dist` folder of the project.
+The command will build all packages. The build can be found in the  `./dist` folder of the project, ready to be deployed to github pages.
 
 ### Start a production build
 To serve the built project locally just run:
