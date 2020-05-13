@@ -1,16 +1,3 @@
-
-
-Work in progress. Todo:
-- tests
-- memory leaks
-- npm publish fixes
-- angular support under packages/ngx-keysroll
-- better docs
-- ~~automatic CI deployment of github pages on merge to master~~
-
-
-
-
 # Keyscroll
 ![](https://github.com/davidstellini/ngrx-demo/workflows/Build%20Test%20And%20Deploy/badge.svg)
 
