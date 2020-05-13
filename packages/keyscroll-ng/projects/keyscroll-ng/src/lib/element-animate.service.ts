@@ -6,12 +6,13 @@ import { elementAnimate } from 'keyscroll';
 })
 export class ElementAnimateService {
   public attachAnimation = (
-    element: HTMLElement,
+    elementToAnimate: HTMLElement,
     keyframeName: string,
     config = {
       animationTiming: 'linear',
       animationStart: 0,
       animationEnd: 1,
-    }
-  ) => elementAnimate.attachAnimation(element, keyframeName, config)
+    },
+    followElement?: HTMLElement
+  ) => elementAnimate.attachAnimation(elementToAnimate, keyframeName, config, followElement)
 }

@@ -14,6 +14,7 @@ export class KeyscrollDirective implements OnChanges {
   @Input() keyscroll: string;
   @Input() keyscrollStart = 0;
   @Input() keyscrollEnd = 1;
+  @Input() keyscrollFollowElement: HTMLElement;
 
   constructor(
     private elRef: ElementRef,
@@ -29,7 +30,8 @@ export class KeyscrollDirective implements OnChanges {
           animationTiming: 'linear',
           animationStart: this.keyscrollStart,
           animationEnd: this.keyscrollEnd,
-        }
+        },
+        this.keyscrollFollowElement
       );
     }
   }

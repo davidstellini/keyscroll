@@ -51,7 +51,8 @@ class ElementAnimate {
       animationTiming: 'linear',
       animationStart: 0,
       animationEnd: 1,
-    }
+    },
+    followElement?: HTMLElement
   ) {
     const direction =
       config.animationStart < config.animationEnd ? 'normal' : 'reverse';
@@ -68,7 +69,7 @@ class ElementAnimate {
         // takeUntil(keyscroller.destroy$),
         map(() =>
           this.getAnimationDelay(
-            element,
+            followElement || element,
             config.animationStart,
             config.animationEnd
           )

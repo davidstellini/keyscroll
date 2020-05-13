@@ -43,6 +43,21 @@
 	}
 }
 
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 @keyframes text-focus-in {
 	0% {
 		-webkit-filter: blur(12px);

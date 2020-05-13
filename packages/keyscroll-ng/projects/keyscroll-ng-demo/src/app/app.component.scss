@@ -1,23 +1,24 @@
 pre {
+  display: none;
 	@media (min-width: 1680px) {
+    height: auto;
+    border: 5px solid white;
+    outline: 1px solid #ccc;
+    background: #1e1e1e;
+    padding: 20px;
+
+    white-space: pre-wrap;
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+
 		&.code-box-right {
-			position: absolute;
+			position: fixed;
 			top: calc(50% - 120px);
 			right: 0;
 		}
 	}
-
-	height: auto;
-	border: 5px solid white;
-	outline: 1px solid #ccc;
-	background: #1e1e1e;
-	padding: 20px;
-
-	white-space: pre-wrap;
-	text-align: left;
-
-	display: flex;
-	flex-direction: column;
 }
 
 .section {
