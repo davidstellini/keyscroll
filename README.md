@@ -3,7 +3,7 @@
 
 Animate CSS keyframes by scrolling through the page. This library can work independently or with a smooth scrolling library of your choice.
 
-###Demo
+## Demo
 
 Angular Demo:
 https://davidstellini.github.io/keyscroll/keyscroll-ng/
@@ -12,7 +12,7 @@ https://davidstellini.github.io/keyscroll/keyscroll-ng/
 Vanilla JS Demo: https://davidstellini.github.io/keyscroll/keyscroll-docs
 
 
-### Quickstart - Angular
+## Quickstart - Angular
 
 1. Install: `npm install keyscroll-ng`
 2. Create a keyframe animation. For example (in styles.scss):
@@ -42,7 +42,7 @@ Vanilla JS Demo: https://davidstellini.github.io/keyscroll/keyscroll-docs
    
     
 
-### Quickstart - Vanilla Javascript
+## Quickstart - Vanilla Javascript
 
 1. Install: `npm install keyscroll`. (Todo: cdnjs).
 2. Create a keyframe animation, in your styles.css, for example:
@@ -70,7 +70,7 @@ Vanilla JS Demo: https://davidstellini.github.io/keyscroll/keyscroll-docs
    [Here's an alternative usage example.](https://github.com/davidstellini/keyscroll/blob/master/packages/keyscroll-docs/src/main.js)
 
 
-###Packages
+## Packages
 Name  | Version | Bundle Size
 ------------- | ------------- | -------------
 keyscroll | 0.1.0 | 4K
@@ -80,31 +80,31 @@ keyscroll-docs  | 0.1.0  | 248K
 
 ## Contributing
 
-###Getting Started
+### Getting Started
 Once you have cloned the project, run: `npm install` to install all dependencies across all packages in the project.
 This will also install dependencies for nested packages.
 
-####Start a dev build
+### Start a dev build
 To start a dev build, run `npm start`.
 This will start the docs locally, and rebuild the library on each change.
 Modules are resolved in package.json via relative paths: 
 `"keyscroll": "file:../keyscroll"`.
 
-####Build the project
+### Build the project
 The project can be built for production by running:
 `$ npm run build`
 Again, the command will build all packages. The result from the build can be found in the  `./dist` folder of the project.
 
-####Start a production build
+### Start a production build
 To serve the built project locally just run:
 `$ npm run local-server`
 This will host an index page from where you can navigate either to the Angular Demo page or to the Vanilla JS page.
 
-####Testing
+### Testing
 To test all packages in the project run:
 `$ npm run test`.
 Due to locally resolved dependencies, remember to build before running the test command.
 
-####Linting
+### Linting
 To lint all packages run:
 `$ npm run lint`
