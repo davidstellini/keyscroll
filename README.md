@@ -8,7 +8,7 @@ Keyscroll is a lightweight library that makes fancy scroll animations a breeze.
 
 Animate your CSS keyframes by scrolling through the page. This library can work independently or with a smooth scrolling library of your choice.
 
-![demo.gif](demo.gif)
+![demo-small.gif](demo-small.gif)
 
 ## Live Demo
 
