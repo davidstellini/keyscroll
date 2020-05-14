@@ -14,7 +14,7 @@ Vanilla JS Demo: https://davidstellini.github.io/keyscroll/keyscroll-docs
 
 ## Quickstart - Angular
 
-1. Install: `npm install keyscroll-ng`
+1. Install: `npm install keyscroll keyscroll-ng --save`
 2. Create a keyframe animation. For example (in styles.scss):
    ```scss
    @keyframes fade {
@@ -85,10 +85,9 @@ Once you have cloned the project, run: `npm install` to install all dependencies
 This will also install dependencies for nested packages.
 
 ### Start a dev build
-To start a dev build, run `npm start`.
-This will start the docs locally, and rebuild the library on each change.
+To start a dev build, run `npm start`. This will start the docs, and watcher on the library locally.
 Modules are resolved in package.json via relative paths: 
-`"keyscroll": "file:../keyscroll"`.
+`"keyscroll": "file:../keyscroll"`. This means that the docs will always point to the latest changes you make in the keyscroll package.
 
 ### Build the project
 The project can be built for production by running:

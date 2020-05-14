@@ -1,6 +1,7 @@
 {
   "name": "keyscroll-ng",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "private": true,
   "scripts": {
     "clean": "rm -rf ./node_modules && rm -rf ./dist",
     "ng": "ng",
@@ -13,7 +14,9 @@
     "test:ci": "ng test --watch=false --browsers=ChromeHeadless",
     "lint": "ng lint",
     "lint:fix": "ng lint --fix",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "publish:dryRun": "cd dist/keyscroll-ng && npm publish --dry-run",
+    "publish": "cd dist/keyscroll-ng && npm publish"
   },
   "dependencies": {
     "@angular/animations": "~9.1.0",
