@@ -8,6 +8,8 @@ Keyscroll is a lightweight library that makes fancy scroll animations a breeze.
 
 Animate your CSS keyframes by scrolling through the page. This library can work independently or with a smooth scrolling library of your choice.
 
+![demo.gif](demo.gif)
+
 ## Live Demo
 
 [Angular Live Demo](https://davidstellini.github.io/keyscroll/keyscroll-ng/) / [Source](packages/keyscroll-ng/projects/keyscroll-ng-demo)
@@ -15,7 +17,6 @@ Animate your CSS keyframes by scrolling through the page. This library can work 
 
 [Vanilla JS Live Demo](https://davidstellini.github.io/keyscroll/keyscroll-docs) / [Source](packages/keyscroll-docs)
 
-![](demo.gif)
 
 ## Quickstart - Angular
 
