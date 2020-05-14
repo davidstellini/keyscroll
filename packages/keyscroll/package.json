@@ -1,6 +1,6 @@
 {
   "name": "keyscroll",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Simple keyframe animations that run while scrolling through the page.",
   "main": "dist/index.js",
   "umd:main": "dist/keyscroll.cjs.js",
@@ -17,7 +17,6 @@
     "lint": "tsdx lint src test",
     "lint:fix": "tsdx lint src test --fix",
     "test": "tsdx test",
-    "test:ci": "npm run test",
-    "publish": "npm publish"
+    "test:ci": "npm run test"
   }
 }

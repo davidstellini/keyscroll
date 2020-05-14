@@ -1,6 +1,15 @@
 {
   "name": "keyscroll-ng",
-  "version": "0.0.1",
+  "version": "0.1.1",
+  "description": "Angular wrapper for keyscroll. Simple keyframe animations that run while scrolling through the page.",
+  "main": "bundles/keyscroll-ng.umd.js",
+  "module": "fesm5/keyscroll-ng.js",
+  "es2015": "fesm2015/keyscroll-ng.js",
+  "esm5": "esm5/keyscroll-ng.js",
+  "esm2015": "esm2015/keyscroll-ng.js",
+  "fesm5": "fesm5/keyscroll-ng.js",
+  "fesm2015": "fesm2015/keyscroll-ng.js",
+  "typings": "keyscroll-ng.d.ts",
   "peerDependencies": {
     "@angular/common": "^9.1.4",
     "@angular/core": "^9.1.4",
