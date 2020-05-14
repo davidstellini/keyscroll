@@ -1,15 +1,21 @@
 # Keyscroll
 ![](https://github.com/davidstellini/ngrx-demo/workflows/Build%20Test%20And%20Deploy/badge.svg)
+![](https://badgen.net/bundlephobia/minzip/keyscroll)
 
+
+Keyscroll is a lightweight library that makes fancy scroll animations a breeze.
+
+## Overview
 Animate CSS keyframes by scrolling through the page. This library can work independently or with a smooth scrolling library of your choice.
 
 ## Demo
 
-Angular Demo:
-https://davidstellini.github.io/keyscroll/keyscroll-ng/
+[Angular Live Demo](https://davidstellini.github.io/keyscroll/keyscroll-ng/) / [Source](packages/keyscroll-ng/projects/keyscroll-ng-demo)
 
 
-Vanilla JS Demo: https://davidstellini.github.io/keyscroll/keyscroll-docs
+
+[Vanilla JS Demo](https://davidstellini.github.io/keyscroll/keyscroll-docs) / [Source](packages/keyscroll-docs)
+
 
 
 ## Quickstart - Angular
@@ -67,14 +73,14 @@ Vanilla JS Demo: https://davidstellini.github.io/keyscroll/keyscroll-docs
        });
    }
    ```
-   [Here's an alternative usage example.](https://github.com/davidstellini/keyscroll/blob/master/packages/keyscroll-docs/src/main.js)
+   [Here's an alternative usage example.](packages/keyscroll-docs/src/main.js)
 
 
 ## Packages
 Name  | Version | Bundle Size
 ------------- | ------------- | -------------
-keyscroll | 0.1.0 | 4K
-keyscroll-ng |  0.1.0 | 4K
+keyscroll | 0.1.1 |  ![](https://badgen.net/bundlephobia/min/keyscroll) ![](https://badgen.net/bundlephobia/minzip/keyscroll)
+keyscroll-ng |  0.1.1 | ![](https://badgen.net/bundlephobia/min/keyscroll-ng) ![](https://badgen.net/bundlephobia/minzip/keyscroll-ng)
 keyscroll-docs  | 0.1.0  | 248K
 
 
