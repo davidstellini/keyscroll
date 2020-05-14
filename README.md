@@ -13,10 +13,9 @@ Animate your CSS keyframes by scrolling through the page. This library can work 
 [Angular Live Demo](https://davidstellini.github.io/keyscroll/keyscroll-ng/) / [Source](packages/keyscroll-ng/projects/keyscroll-ng-demo)
 
 
-
 [Vanilla JS Live Demo](https://davidstellini.github.io/keyscroll/keyscroll-docs) / [Source](packages/keyscroll-docs)
 
-
+![](demo.gif)
 
 ## Quickstart - Angular
 
