@@ -1,9 +1,13 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { KeyscrollNgModule } from 'keyscroll-ng';
+import { HighlightModule } from 'ngx-highlightjs';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [BrowserModule, KeyscrollNgModule, HighlightModule],
       declarations: [AppComponent],
     }).compileComponents();
   }));

@@ -3,18 +3,18 @@
 ![](https://badgen.net/bundlephobia/minzip/keyscroll)
 
 
+## Overview
 Keyscroll is a lightweight library that makes fancy scroll animations a breeze.
 
-## Overview
-Animate CSS keyframes by scrolling through the page. This library can work independently or with a smooth scrolling library of your choice.
+Animate your CSS keyframes by scrolling through the page. This library can work independently or with a smooth scrolling library of your choice.
 
-## Demo
+## Live Demo
 
 [Angular Live Demo](https://davidstellini.github.io/keyscroll/keyscroll-ng/) / [Source](packages/keyscroll-ng/projects/keyscroll-ng-demo)
 
 
 
-[Vanilla JS Demo](https://davidstellini.github.io/keyscroll/keyscroll-docs) / [Source](packages/keyscroll-docs)
+[Vanilla JS Live Demo](https://davidstellini.github.io/keyscroll/keyscroll-docs) / [Source](packages/keyscroll-docs)
 
 
 
