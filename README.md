@@ -8,14 +8,15 @@ Keyscroll is a lightweight library that makes fancy scroll animations a breeze.
 
 Animate your CSS keyframes by scrolling through the page. This library can work independently or with a smooth scrolling library of your choice.
 
-![demo-small.gif](demo-small.gif)
+![demo_small.gif](demo_small.gif)
+
 
 ## Live Demo
 
 [Angular Live Demo](https://davidstellini.github.io/keyscroll/keyscroll-ng/) / [Source](packages/keyscroll-ng/projects/keyscroll-ng-demo)
 
-
 [Vanilla JS Live Demo](https://davidstellini.github.io/keyscroll/keyscroll-docs) / [Source](packages/keyscroll-docs)
+
 
 
 ## Quickstart - Angular
@@ -50,7 +51,7 @@ Animate your CSS keyframes by scrolling through the page. This library can work 
 
 ## Quickstart - Vanilla Javascript
 
-1. Install: `npm install keyscroll`. (Todo: cdnjs).
+1. Install: `npm install keyscroll --save`. (Todo: cdnjs).
 2. Create a keyframe animation, in your styles.css, for example:
    ```css
    @keyframes fade {
@@ -76,6 +77,13 @@ Animate your CSS keyframes by scrolling through the page. This library can work 
    [Here's an alternative usage example.](packages/keyscroll-docs/src/main.js)
 
 
+## Quickstart - React
+
+For React, a Stackblitz with a simple example can be found here [Stackblitz](https://stackblitz.com/edit/react-bywrdu?file=Sections.js).
+A React Wrapper will be built into this project soon. In the meantime, [React usage is documented here](REACT.md).
+
+
+
 ## Packages
 Name  | Version | Bundle Size
 ------------- | ------------- | -------------
@@ -87,8 +95,8 @@ keyscroll-docs  | 0.1.0  | 248K
 ## Contributing
 
 ### Getting Started
-Once you have cloned the project, run: `npm install` to install all dependencies across all packages in the project.
-This will also install dependencies for nested packages.
+Once you have cloned the project, run: `npm install` to install all dependencies. A post installation command will then install
+remaining dependencies across all projects in the repository.
 
 ### Start a dev build
 To start a dev build, run `npm start`. This will start the docs, and watcher on the library locally.
@@ -101,9 +109,9 @@ The project can be built for production by running:
 The command will build all packages. The build can be found in the  `./dist` folder of the project, ready to be deployed to github pages.
 
 ### Start a production build
-To serve the built project locally just run:
+To serve the built project locally, use:
 `$ npm run local-server`
-This will host an index page from where you can navigate either to the Angular Demo page or to the Vanilla JS page.
+Once hosted, this will allow you to try out both the Angular Demo, as well as the Vanilla JS demo locally.
 
 ### Testing
 To test all packages in the project run:
