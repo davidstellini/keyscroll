@@ -14,7 +14,7 @@ export class KeyscrollDirective implements OnChanges {
   constructor(
     private elRef: ElementRef,
     private elementAnimateService: ElementAnimateService,
-    @Inject(PLATFORM_ID) private platformId: Object
+    @Inject(PLATFORM_ID) private platformId: string
   ) {}
 
   ngOnChanges(changes: SimpleChanges): void {
