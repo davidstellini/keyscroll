@@ -1,6 +1,6 @@
 {
   "name": "keyscroll",
-  "version": "0.1.1",
+  "version": "0.1.4",
   "description": "Simple keyframe animations that run while scrolling through the page.",
   "main": "dist/index.js",
   "umd:main": "dist/keyscroll.cjs.js",

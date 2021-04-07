@@ -1,6 +1,6 @@
 {
   "name": "keyscroll-ng",
-  "version": "0.1.1",
+  "version": "0.1.4",
   "private": true,
   "scripts": {
     "clean": "rm -rf ./node_modules && rm -rf ./dist",
@@ -30,7 +30,7 @@
     "@smoovy/scroller": "^0.1.13",
     "keyscroll": "file:../keyscroll",
     "ngx-highlightjs": "^4.1.0-beta",
-    "rxjs": "~6.5.4",
+    "rxjs": "~6.6.7",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
   }
